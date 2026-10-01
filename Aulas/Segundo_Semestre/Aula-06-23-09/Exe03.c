@@ -23,8 +23,6 @@ int contarVogais(const char *texto)
 int main()
 {
     char nome[30];
-    char *pTexto = nome;
-    int quantidade;
 
     printf("Informe um nome para contar vogais\n");
     do
@@ -38,8 +36,7 @@ int main()
         }
     } while (strlen(nome) == 0);
 
-    quantidade = contarVogais(pTexto);
-    printf("A quantidade de vogais é de %d.\n", quantidade);
+    printf("A quantidade de vogais é de %d.\n", contarVogais(nome));
 
     return 0;
 }
